@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>HTML5 - Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  </head>
+
+  <body>
+    <h1>Hello!</h1>
+
+    <!-- Your Javascript Here, right before end of body tag -->
+    <script>
+      const myHeading = document.querySelector("h1");
+      myHeading.addEventListener("click", function () {
+        if (myHeading.textContent === "Hello!") {
+          myHeading.textContent = "Hello world!";
+        } else {
+          myHeading.textContent = "Hello again!";
+        }
+      });
+    </script>
+  </body>
+
+</html>
